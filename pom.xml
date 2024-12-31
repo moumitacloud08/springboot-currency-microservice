@@ -15,5 +15,6 @@
   </properties>
   <modules>
   	<module>springboot-limit-service</module>
+  	<module>spring-cloud-config-server</module>
   </modules>
 </project>

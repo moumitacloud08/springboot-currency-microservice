@@ -5,10 +5,8 @@ import java.math.BigDecimal;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "exchange_value")
 public class CurrencyExchange {
 	@Id
 	private Long id;
@@ -16,7 +14,6 @@ public class CurrencyExchange {
 	private String from;
 	@Column(name = "currency_to")
 	private String to;
-	@Column(name = "conversion_multiple")
 	private BigDecimal conversionMultiple;
 	private String environment;
 

@@ -18,5 +18,6 @@
   	<module>spring-cloud-config-server</module>
   	<module>currency-exchange-service</module>
   	<module>currency-conversion-service</module>
+  	<module>naming-server</module>
   </modules>
 </project>

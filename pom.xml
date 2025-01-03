@@ -19,5 +19,6 @@
   	<module>currency-exchange-service</module>
   	<module>currency-conversion-service</module>
   	<module>naming-server</module>
+  	<module>api-gateway</module>
   </modules>
 </project>

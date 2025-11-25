@@ -20,5 +20,6 @@
   	<module>currency-conversion-service</module>
   	<module>naming-server</module>
   	<module>api-gateway</module>
+  	<module>spring-hello-world-java-service</module>
   </modules>
 </project>

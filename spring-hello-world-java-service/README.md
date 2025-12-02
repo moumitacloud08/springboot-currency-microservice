@@ -43,7 +43,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 ########===================Dockerfile - 2 - Build Jar File - Multi Stage=========================###########
 
 
-##====Single Module Project=====##
+##====================Single Module Project=======================##
 FROM maven:3.8.6-openjdk-18-slim AS build
 WORKDIR /home/app
 COPY . /home/app
@@ -57,7 +57,7 @@ ENTRYPOINT [ "sh", "-c", "java -jar /app.jar" ]
 
 
 
-##====Multi Module Project=====##
+##=================Multi Module Project============##
 FROM maven:3.9.6-eclipse-temurin-21 AS build
 
 WORKDIR /home/app
@@ -100,7 +100,7 @@ docker build -f spring-hello-world-java-service/Dockerfile -t in28min/hello-worl
 ##########=======================================Dockerfile - 3 - Caching==========================================########
 
 
-##====Single Module Project=====##
+##====================Single Module Project======================##
 FROM maven:3.8.6-openjdk-18-slim AS build
 WORKDIR /home/app
 
@@ -121,7 +121,7 @@ ENTRYPOINT [ "sh", "-c", "java -jar /app.jar" ]
 
 
 
-##====Multi Module Project=====##
+##==================Multi Module Project================##
 ### === BUILD STAGE ===
 FROM maven:3.9.6-eclipse-temurin-21 AS build
 
@@ -173,8 +173,3 @@ EXPOSE 5000
 COPY --from=build /home/app/spring-hello-world-java-service/target/*.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
-
-
-
-
-

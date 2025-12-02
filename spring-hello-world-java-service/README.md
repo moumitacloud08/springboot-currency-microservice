@@ -5,6 +5,29 @@ docker build -t in28min/hello-world-docker:v1 .
 docker container run -d -p 5000:5000 in28min/hello-world-docker:v3
 
 
+
+
+
+
+wsl -d Ubuntu
+sudo apt update
+docker version
+docker info
+cd /mnt/c/workspace/17-11-2024/SpringFramework/springboot-currency-microservice/spring-hello-world-java-service
+mvn clean package spring-boot:build-image
+
+docker run -d -p 9411:9411 openzipkin/zipkin:2.23
+
+
+
+
+
+
+
+
+
+
+
 ##########=========================Dockerfile - 1 - Creating Docker Images=========================##########
 FROM eclipse-temurin:21-jre-alpine
 COPY target/*.jar app.jar

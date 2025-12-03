@@ -17,6 +17,8 @@ cd /mnt/c/workspace/17-11-2024/SpringFramework/springboot-currency-microservice/
 mvn clean package spring-boot:build-image
 
 docker run -d -p 9411:9411 openzipkin/zipkin:2.23
+docker run -d -p 9411:9411 openzipkin/zipkin:latest
+
 
 
 

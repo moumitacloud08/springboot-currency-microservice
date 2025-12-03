@@ -33,3 +33,6 @@ Custom Routes
 
 http://localhost:8765/get
 
+zipkin
+http://localhost:9411/zipkin/
+
